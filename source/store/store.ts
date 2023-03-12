@@ -4,7 +4,7 @@ import themeReducer from '../slice/themeSlice';
 
 export const store = configureStore({
   reducer: {
-    COLORS: themeReducer,
+    theme: themeReducer,
   },
 });
 

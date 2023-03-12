@@ -7,15 +7,23 @@ const systemColor = useColorScheme();
 const colors = systemColor === 'light' ? light : dark;
 const initialState = {
   name: systemColor,
-  ...baseColor,
-  ...colors,
+  COLORS: {
+    ...colors,
+    ...baseColor,
+  },
 };
 const themSlice = createSlice({
   name: 'themes',
   initialState,
   reducers: {
-    toggleTheme: state => {
-      console.log(state);
+    toggleTheme: theme => {
+      if (theme.name === 'light') {
+        theme.name = 'dark';
+        theme.COLORS = {...baseColor, ...dark};
+      } else {
+        theme.name = 'light';
+        theme.COLORS = {...baseColor, ...light};
+      }
     },
   },
 });
