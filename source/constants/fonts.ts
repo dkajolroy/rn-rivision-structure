@@ -1,7 +1,7 @@
-import {SIZES} from './sizes';
+import SIZES from './sizes';
 
 const FONTS = {
-  largeTitle: {fontFamily: 'Roboto Regular', fontSize: SIZES.h1},
+  largeTitle: {fontFamily: 'Roboto Bold', fontSize: SIZES.largeTittle},
   h1: {fontFamily: 'Roboto Bold', fontSize: SIZES.h1, lineHeight: 30},
   h2: {fontFamily: 'Roboto Bold', fontSize: SIZES.h2, lineHeight: 22},
   h3: {fontFamily: 'Roboto Bold', fontSize: SIZES.h3, lineHeight: 16},
