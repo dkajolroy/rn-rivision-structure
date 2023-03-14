@@ -5,6 +5,9 @@ export default function CartScreen() {
   return (
     <View>
       <Text>CartScreen</Text>
+      <View>
+        <Text>This is Cart Screen</Text>
+      </View>
     </View>
   );
 }
