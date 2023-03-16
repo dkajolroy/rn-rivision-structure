@@ -1,6 +1,9 @@
+import {TextStyle} from 'react-native/types';
 import SIZES from './sizes';
 
-const FONTS = {
+type FontsType = {[key: string]: TextStyle};
+
+const FONTS: FontsType = {
   largeTitle: {fontFamily: 'Roboto Bold', fontSize: SIZES.largeTittle},
   h1: {fontFamily: 'Roboto Bold', fontSize: SIZES.h1, lineHeight: 30},
   h2: {fontFamily: 'Roboto Bold', fontSize: SIZES.h2, lineHeight: 22},
